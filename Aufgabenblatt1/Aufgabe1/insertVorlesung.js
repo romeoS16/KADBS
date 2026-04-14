@@ -90,7 +90,7 @@ db.vorlesung.insertMany([
 const ain = db.studiengang.findOne({ kuerzel: "AIN" })
 
 
-db.vorlesungen.insertMany([
+db.vorlesung.insertMany([
   {
     name: "Digitaltechnik",
     dozent: "Prof. Dr. Weber",
@@ -177,7 +177,7 @@ db.vorlesungen.insertMany([
 
 const gib = db.studiengang.findOne({ kuerzel: "GIB" })
 
-db.vorlesungen.insertMany([
+db.vorlesung.insertMany([
   {
     name: "Internet-Technologien",
     dozent: "Prof. Dr. Weber",
@@ -264,7 +264,7 @@ db.vorlesungen.insertMany([
 
 const msi = db.studiengang.findOne({ kuerzel: "MSI" })
 
-db.vorlesungen.insertMany([
+db.vorlesung.insertMany([
   {
     name: "Data Analysis",
     dozent: "Prof. Dr. Weber",
@@ -331,7 +331,7 @@ db.vorlesungen.insertMany([
   },
   {
     name: "IT-Sicherheitsarchitekturen",
-    dozent: "Prof. Dr. Klein",
+    dozent: "Prof. Dr. Wolf",
     semester: 2,
     studiengang: DBRef("studiengang", msi._id),
     sws: 2,
@@ -342,7 +342,7 @@ db.vorlesungen.insertMany([
     dozent: "Prof. Dr. Wolf",
     semester: 2,
     studiengang: DBRef("studiengang", msi._id),
-    sws: 3,
+    sws: 5,
     ects: 4
   }
 ])
