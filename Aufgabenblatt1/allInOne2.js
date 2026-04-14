@@ -85,7 +85,7 @@ db.pers.aggregate([
 // JOIN pers p2 ON p1.vorgesetzter = p2._id
 // WHERE p1.jahrg < p2.jahrg
 
-// c) 
+// c) Welche Abteilung hat durchschnittlich die jüngsten Mitarbeiter? Es sollen nur die Abteilungsnummer und der Abteilungsname ausgegeben werden. 
 
 
 db.pers.aggregate([
